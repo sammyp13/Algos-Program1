@@ -1,10 +1,10 @@
 #include <iostream>
 #include <vector>
-#include "shellsort.cpp"
+#include "ShellSort.cpp"
 
 
 int main()
 {
-    vector<C1> qq;
-    shellsort(qq, 0);
+    vector<C1> hlist;
+    ShellSort(hlist, 0);
 }

@@ -123,6 +123,33 @@ Algos_Program1/fast:
 	$(MAKE) -f CMakeFiles/Algos_Program1.dir/build.make CMakeFiles/Algos_Program1.dir/build
 .PHONY : Algos_Program1/fast
 
+ShellSort.o: ShellSort.cpp.o
+
+.PHONY : ShellSort.o
+
+# target to build an object file
+ShellSort.cpp.o:
+	$(MAKE) -f CMakeFiles/Algos_Program1.dir/build.make CMakeFiles/Algos_Program1.dir/ShellSort.cpp.o
+.PHONY : ShellSort.cpp.o
+
+ShellSort.i: ShellSort.cpp.i
+
+.PHONY : ShellSort.i
+
+# target to preprocess a source file
+ShellSort.cpp.i:
+	$(MAKE) -f CMakeFiles/Algos_Program1.dir/build.make CMakeFiles/Algos_Program1.dir/ShellSort.cpp.i
+.PHONY : ShellSort.cpp.i
+
+ShellSort.s: ShellSort.cpp.s
+
+.PHONY : ShellSort.s
+
+# target to generate assembly for a file
+ShellSort.cpp.s:
+	$(MAKE) -f CMakeFiles/Algos_Program1.dir/build.make CMakeFiles/Algos_Program1.dir/ShellSort.cpp.s
+.PHONY : ShellSort.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -150,33 +177,6 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/Algos_Program1.dir/build.make CMakeFiles/Algos_Program1.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-shellsort.o: shellsort.cpp.o
-
-.PHONY : shellsort.o
-
-# target to build an object file
-shellsort.cpp.o:
-	$(MAKE) -f CMakeFiles/Algos_Program1.dir/build.make CMakeFiles/Algos_Program1.dir/shellsort.cpp.o
-.PHONY : shellsort.cpp.o
-
-shellsort.i: shellsort.cpp.i
-
-.PHONY : shellsort.i
-
-# target to preprocess a source file
-shellsort.cpp.i:
-	$(MAKE) -f CMakeFiles/Algos_Program1.dir/build.make CMakeFiles/Algos_Program1.dir/shellsort.cpp.i
-.PHONY : shellsort.cpp.i
-
-shellsort.s: shellsort.cpp.s
-
-.PHONY : shellsort.s
-
-# target to generate assembly for a file
-shellsort.cpp.s:
-	$(MAKE) -f CMakeFiles/Algos_Program1.dir/build.make CMakeFiles/Algos_Program1.dir/shellsort.cpp.s
-.PHONY : shellsort.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -186,12 +186,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Algos_Program1"
+	@echo "... ShellSort.o"
+	@echo "... ShellSort.i"
+	@echo "... ShellSort.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... shellsort.o"
-	@echo "... shellsort.i"
-	@echo "... shellsort.s"
 .PHONY : help
 
 
