@@ -3,4 +3,4 @@ project(Algos_Program1)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Algos_Program1 main.cpp ShellSort.cpp)
+add_executable(Algos_Program1 main.cpp)

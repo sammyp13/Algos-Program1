@@ -1,5 +1,6 @@
 #include <vector>
 #include <cmath>
+#include <algorithm>
 #include "c1.h"
 
 void ShellSort(vector<C1>& varray, int code)
@@ -33,24 +34,43 @@ void ShellSort(vector<C1>& varray, int code)
             break;
 
         case 3: { //code = 3
-            //k (k-1) < n
+            //k * (k-1) < n
+            int k = 2;
+            int temp = ((k * (k-1))/ 2);
+            while(temp < n){
+                hlist.push_back(temp);
+                k ++;
+                temp = ((k * (k-1))/ 2);
+            }
+            reverse(hlist.begin(), hlist.end());
         }
             break;
+
     }
 
+
+    //print hlist
+    cout<< "Case: " << code << "The hlist is: ";
+    for(int i = 0; i < hlist.size(); i++){
+        cout<< hlist[i] << " " ;
+    }
+        cout<<endl;
+
+
+    //shell sort:
     for(int i = 0; i < hlist.size(); i ++) {
         int h = hlist[i];
-        for (int j = 1; j < hlist.size(); j++) {
+        for (int j = h; j < hlist.size(); j+= h) {
             C1 key;
             key == varray[j];
             int i = j - h;
-            while ((i > 0) and (key < varray[i])){
-                varray[i + h] = varray[i];
+            while ((i >= 0) and (key < varray[i])){
+                varray[i + h] == varray[i];
                 i = i - h;
             }
         varray[i + h] == key;
         }
     }
-    cout << "Shell Sort"<< endl;
+
 }
 

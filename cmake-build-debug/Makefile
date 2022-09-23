@@ -123,33 +123,6 @@ Algos_Program1/fast:
 	$(MAKE) -f CMakeFiles/Algos_Program1.dir/build.make CMakeFiles/Algos_Program1.dir/build
 .PHONY : Algos_Program1/fast
 
-ShellSort.o: ShellSort.cpp.o
-
-.PHONY : ShellSort.o
-
-# target to build an object file
-ShellSort.cpp.o:
-	$(MAKE) -f CMakeFiles/Algos_Program1.dir/build.make CMakeFiles/Algos_Program1.dir/ShellSort.cpp.o
-.PHONY : ShellSort.cpp.o
-
-ShellSort.i: ShellSort.cpp.i
-
-.PHONY : ShellSort.i
-
-# target to preprocess a source file
-ShellSort.cpp.i:
-	$(MAKE) -f CMakeFiles/Algos_Program1.dir/build.make CMakeFiles/Algos_Program1.dir/ShellSort.cpp.i
-.PHONY : ShellSort.cpp.i
-
-ShellSort.s: ShellSort.cpp.s
-
-.PHONY : ShellSort.s
-
-# target to generate assembly for a file
-ShellSort.cpp.s:
-	$(MAKE) -f CMakeFiles/Algos_Program1.dir/build.make CMakeFiles/Algos_Program1.dir/ShellSort.cpp.s
-.PHONY : ShellSort.cpp.s
-
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -186,9 +159,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Algos_Program1"
-	@echo "... ShellSort.o"
-	@echo "... ShellSort.i"
-	@echo "... ShellSort.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
